@@ -13,6 +13,15 @@
   justify-content: flex-end;
   padding-bottom: 3rem;
   position: relative;
+
+  @media screen and (min-width: 768px) {
+    min-height: 600px;
+    padding: 0;
+    align-items: flex-start;
+    justify-content: center;
+
+    min-height: 420px;
+  }
 }
 .blur {
   position: absolute;
@@ -20,8 +29,12 @@
   left: 0;
   width: 100vw;
   height: 100%;
-  
+
   opacity: 0.5;
   background-color: #292524;
   z-index: 1;
+}
+
+.heroContainer {
+  border: red solid 1px;
 }
