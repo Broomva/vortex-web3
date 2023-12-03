@@ -17,7 +17,7 @@ const Sample: NextPage = () => {
   const { data: balance} = useScaffoldContractRead({
     contractName: "ProgressToken",
     functionName: "balanceOf",
-    args: ["0x00F1C352cdfc563B84F3afa7Eee663aD8571ec1a"],
+    args: [ address ],
   });
 
   return (

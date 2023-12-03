@@ -26,7 +26,7 @@ const config: HardhatUserConfig = {
       },
     },
   },
-  defaultNetwork: "localhost",
+  defaultNetwork: "alfajores",
   namedAccounts: {
     deployer: {
       // By default, it will take the first Hardhat account as the deployer
@@ -35,6 +35,11 @@ const config: HardhatUserConfig = {
   },
   networks: {
     // View the networks that are pre-configured.
+    alfajores: {
+      // puede reemplazarse con la url RPC de tu elección.
+      url: "https://alfajores-forno.celo-testnet.org/",
+      accounts: ["0bae717530b04fb29ba678705d72e96daf11860cbd67f8d3ccaaeb6d869f2f1a"],
+    },
     // If the network you are looking for is not here you can add new network settings
     hardhat: {
       forking: {
@@ -44,10 +49,6 @@ const config: HardhatUserConfig = {
     },
     mainnet: {
       url: `https://eth-mainnet.alchemyapi.io/v2/${providerApiKey}`,
-      accounts: [deployerPrivateKey],
-    },
-    sepolia: {
-      url: `https://eth-sepolia.g.alchemy.com/v2/${providerApiKey}`,
       accounts: [deployerPrivateKey],
     },
     goerli: {
