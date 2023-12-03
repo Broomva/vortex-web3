@@ -1,0 +1,27 @@
+.hero {
+  background-image: url("../../../public/3d_final.png");
+  background-repeat: no-repeat;
+  min-height: 508px;
+  width: 100%;
+  background-size: cover;
+
+  padding: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding-bottom: 3rem;
+  position: relative;
+}
+.blur {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+  
+  opacity: 0.5;
+  background-color: #292524;
+  z-index: 1;
+}
