@@ -2,8 +2,9 @@ import React, { useCallback, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import Logo from "../logo_brain_blaze.png";
 import { Bars3Icon, BugAntIcon } from "@heroicons/react/24/outline";
-import { FaucetButton, RainbowKitCustomConnectButton } from "~~/components/scaffold-eth";
+import { RainbowKitCustomConnectButton } from "~~/components/scaffold-eth";
 import { useOutsideClick } from "~~/hooks/scaffold-eth";
 
 interface HeaderMenuLink {
@@ -25,10 +26,7 @@ export const menuLinks: HeaderMenuLink[] = [
     label: "Perfil",
     href: "/perfil",
   },
-  {
-    label: "Cursos",
-    href: "/cursos",
-  },
+
   {
     label: "Recompensas",
     href: "/recompensas",
@@ -87,13 +85,37 @@ export const Header = () => {
       <div className="navbar-start w-auto lg:w-1/2">
         <Link href="/" passHref className="hidden lg:flex items-center gap-2 ml-4 mr-6 shrink-0">
           <div className="flex relative w-10 h-10">
-            <Image alt="SE2 logo" className="cursor-pointer" fill src="/logo.svg" />
+            <Image alt="SE2 logo" className="cursor-pointer" width={24} height={38} src={Logo} />
           </div>
           <div className="flex flex-col">
             <span className="font-bold leading-tight">BrainBlaze</span>
             <span className="text-xs">Ethereum dev stack</span>
           </div>
         </Link>
+        <div className="lg:hidden dropdown" ref={burgerMenuRef}>
+          <label
+            tabIndex={0}
+            className={`ml-1 btn btn-ghost ${isDrawerOpen ? "hover:bg-secondary" : "hover:bg-transparent"}`}
+            onClick={() => {
+              setIsDrawerOpen(prevIsOpenState => !prevIsOpenState);
+            }}
+          >
+            <Bars3Icon className="h-1/2" />
+          </label>
+          {isDrawerOpen && (
+            <div>
+              <ul
+                tabIndex={0}
+                className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
+                onClick={() => {
+                  setIsDrawerOpen(false);
+                }}
+              >
+                <HeaderMenuLinks />
+              </ul>
+            </div>
+          )}
+        </div>
         <ul className="hidden lg:flex lg:flex-nowrap menu menu-horizontal px-1 gap-2">
           <HeaderMenuLinks />
         </ul>
@@ -101,30 +123,6 @@ export const Header = () => {
       <div className="navbar-end flex-grow mr-4">
         <RainbowKitCustomConnectButton />
         <FaucetButton />
-      </div>
-      <div className="lg:hidden dropdown" ref={burgerMenuRef}>
-        <label
-          tabIndex={0}
-          className={`ml-1 btn btn-ghost ${isDrawerOpen ? "hover:bg-secondary" : "hover:bg-transparent"}`}
-          onClick={() => {
-            setIsDrawerOpen(prevIsOpenState => !prevIsOpenState);
-          }}
-        >
-          <Bars3Icon className="h-1/2" />
-        </label>
-        {isDrawerOpen && (
-          <div>
-            <ul
-              tabIndex={0}
-              className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
-              onClick={() => {
-                setIsDrawerOpen(false);
-              }}
-            >
-              <HeaderMenuLinks />
-            </ul>
-          </div>
-        )}
       </div>
     </div>
   );

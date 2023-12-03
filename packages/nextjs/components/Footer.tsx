@@ -16,16 +16,22 @@ export const Footer = () => {
               <span className="text-black">Brain</span> <span className="text-red-600">Blaze</span>
             </div>
           </div>
-          <nav className="mt-4" aria-label="Main Navigation">
-            <a href="#" className="text-stone-800 text-sm font-semibold leading-3 self-center whitespace-nowrap mt-4">
-              Contacto
-            </a>
-            <a href="#" className="text-stone-800 text-sm font-semibold leading-3 mt-4">
-              Preguntas frecuentes
-            </a>
-            <a href="#" className="text-stone-800 text-sm font-semibold leading-3 self-center whitespace-nowrap mt-4">
-              Documentación
-            </a>
+          <nav className="mt-4 flex flex-col gap-2" aria-label="Main Navigation">
+            <div>
+              <a href="#" className="text-stone-800 text-sm font-semibold leading-3 self-center whitespace-nowrap mt-4">
+                Contacto
+              </a>
+            </div>
+            <div>
+              <a href="#" className="text-stone-800 text-sm font-semibold leading-3 mt-4">
+                Preguntas frecuentes
+              </a>
+            </div>
+            <div>
+              <a href="#" className="text-stone-800 text-sm font-semibold leading-3 self-center whitespace-nowrap mt-4">
+                Documentación
+              </a>
+            </div>
           </nav>
           <form>
             <div className="justify-center items-stretch self-center flex w-28 max-w-full gap-4 mt-4 py-6">

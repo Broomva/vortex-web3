@@ -5,10 +5,10 @@ import styles from "./CourseProgress.module.css";
 
 const CourseProgress = () => {
   return (
-    <div className=" w-full px-3 flex flex-col gap-1 mt-4">
+    <div className=" w-full px-3 flex flex-col gap-1 mt-3 pb-2">
       <h3 className={styles.title}>Continúa aprendiendo</h3>
 
-      <form className="items-stretch self-stretch shadow-md bg-white flex gap-2.5 p-2 rounded-2xl">
+      <form className="items-stretch self-stretch shadow-md bg-white flex gap-2.5 p-2 rounded-2xl mt-3">
         <div className="flex-col justify-center items-center overflow-hidden relative flex aspect-[0.8076923076923077] w-[105px]   rounded-2xl ">
           <Image loading="lazy" src={ActualCourse} alt={"Actual Course"} width={105} height={130} />
         </div>

@@ -8,13 +8,14 @@ const Sample: NextPage = () => {
   const { writeAsync } = useScaffoldContractWrite({
     contractName: "ProgressToken",
     functionName: "completeVideo",
+    args: [address], // Add the args property with the address as an array
     blockConfirmations: 1,
-    onBlockConfirmation: txnReceipt => {
+    onBlockConfirmation: (txnReceipt) => {
       console.log("Transaction blockHash", txnReceipt.blockHash);
     },
   });
 
-  const { data: balance} = useScaffoldContractRead({
+  const { data: balance } = useScaffoldContractRead({
     contractName: "ProgressToken",
     functionName: "balanceOf",
     args: [ address ],
@@ -23,7 +24,7 @@ const Sample: NextPage = () => {
   return (
     <>
       <p></p>
-      <button className="btn btn-primary" onClick={() => writeAsync({ args: [address] })}>
+      <button className="btn btn-primary" onClick={() => writeAsync()}>
         Mintear tokens
       </button>
       <p>
