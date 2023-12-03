@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import MaxWidthWrapper from "../../MaxWidthWrapper";
 import styles from "./Hero.module.css";
 
@@ -14,13 +15,15 @@ export const Hero = () => {
           <section className="text-stone-50 text-base font-semibold leading-6 w-full mt-8">
             Descubre un aprendizaje entretenido con recompensas en nuestra app blockchain.
           </section>
-          <button
-            className="text-stone-50 text-sm font-bold leading-5 whitespace-nowrap justify-center bg-red-600 w-full mt-7 pl-11 pr-16 py-3 rounded-[30px] items-start max-md:px-5"
-            aria-label="Empezar"
-            aria-role="button"
-          >
-            Empezar
-          </button>
+          <Link href="/cursos">
+            <button
+              className="text-stone-50 text-sm font-bold leading-5 whitespace-nowrap justify-center bg-red-600 w-full mt-7 pl-11 pr-16 py-3 rounded-[30px] items-start max-md:px-5"
+              aria-label="Empezar"
+              role="button"
+            >
+              Empezar
+            </button>
+          </Link>
         </div>
       </MaxWidthWrapper>
     </form>

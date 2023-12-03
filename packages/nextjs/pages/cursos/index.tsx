@@ -2,8 +2,40 @@ import * as React from "react";
 import Image from "next/image";
 import { MaxWidthWrapper } from "../../components/MaxWidthWrapper";
 import Certificado from "../../public/certificado.png";
+import { useToast } from "@chakra-ui/react";
+import { useAccount } from "wagmi";
+import { useScaffoldContractWrite } from "~~/hooks/scaffold-eth";
 
 const UpdatedComponent: React.FC = () => {
+  const toast = useToast();
+  const { address } = useAccount();
+
+  const { writeAsync } = useScaffoldContractWrite({
+    contractName: "ProgressToken",
+    functionName: "completeVideo",
+    args: [address], // Add the args property with the address as an array
+    blockConfirmations: 1,
+    onBlockConfirmation: txnReceipt => {
+      console.log("Transaction blockHash", txnReceipt.blockHash);
+    },
+  });
+
+  const handleFileUpload = (event: any) => {
+    const file = event.target.files[0];
+    console.log("Archivo cargado:", file);
+    writeAsync();
+
+    setTimeout(() => {
+      toast({
+        title: "Has ganado 10 BLZ.",
+        description: "Gracias por aprender con nosotros.",
+        status: "success",
+        duration: 9000,
+        isClosable: true,
+      });
+    }, 1000);
+    // Aquí puedes manejar el archivo cargado como necesites
+  };
   return (
     <MaxWidthWrapper>
       <div className="flex flex-col items-stretch p-3">
@@ -14,7 +46,7 @@ const UpdatedComponent: React.FC = () => {
                 <path d="M16.88 9.1A4 4 0 0 1 16 17H5a5 5 0 0 1-1-9.9V7a3 3 0 0 1 4.52-2.59A4.98 4.98 0 0 1 17 8c0 .38-.04.74-.12 1.1zM11 11h3l-4-4-4 4h3v3h2v-3z" />
               </svg>
               <span className="mt-2 text-base leading-normal">Carga el certificado</span>
-              <input type="file" className="hidden" />
+              <input type="file" className="hidden" onChange={handleFileUpload} />
             </label>
           </div>
         </header>
