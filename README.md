@@ -70,3 +70,12 @@ Hecho esto, ya puedes interactuar con la dapp en el navegador en esta dirección
 
 ## Equipo
 Somos un equipo de apasionados por la tecnología, la innovación y la educación efectiva que involucre al aprendiz en su aprendizaje usando la gamificación. Nuestro equipo está compuesto por: 
+![Descripción alternativa](https://res.cloudinary.com/dp852gaey/image/upload/v1701640207/ocj9z0t5zmno52yzmzhl.png)
+![Descripción alternativa](https://res.cloudinary.com/dp852gaey/image/upload/v1701640251/wbvnhzi69wdsfcaobtaj.png)
+
+## Tecnologías
+
+Celo
+
+Refi
+
