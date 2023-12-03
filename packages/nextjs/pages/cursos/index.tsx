@@ -27,7 +27,7 @@ const UpdatedComponent: React.FC = () => {
 
     setTimeout(() => {
       toast({
-        title: "Has ganado 10 BLZ.",
+        title: "Has ganado 1 BLZ.",
         description: "Gracias por aprender con nosotros.",
         status: "success",
         duration: 9000,

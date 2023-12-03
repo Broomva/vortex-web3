@@ -12,7 +12,7 @@ contract CourseNFT is ERC721URIStorage {
         _nextTokenId = 1;
     }
 
-    function completeVideo(address student) public {
+    function mintNFT(address student) public {
         videosCompleted[student]++;
 
         // Acuña un NFT cuando se complete el curso de 6 videos
