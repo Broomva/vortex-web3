@@ -3,7 +3,6 @@ import Image from "next/image";
 import Categoria1 from "../../../public/categoria_1.svg";
 import Categoria2 from "../../../public/categoria_2.svg";
 import Categoria3 from "../../../public/categoria_3.svg";
-import Categoria4 from "../../../public/categoria_4.svg";
 import styles from "./Categories.module.css";
 import "swiper/css";
 import { Swiper, SwiperSlide } from "swiper/react";
