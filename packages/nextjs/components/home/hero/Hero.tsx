@@ -1,10 +1,12 @@
 import React from "react";
+import { useRouter } from "next/router";
 import MaxWidthWrapper from "../../MaxWidthWrapper";
 import styles from "./Hero.module.css";
 
 export const Hero = () => {
+  const router = useRouter();
   return (
-    <form className={styles.hero}>
+    <div className={styles.hero}>
       <div className={styles.blur} />
       <MaxWidthWrapper>
         <div className=" relative z-10 flex flex-col items-start justify-center w-full max-w-[500px] lg:items-center ">
@@ -17,13 +19,14 @@ export const Hero = () => {
           <button
             className="text-stone-50 text-sm font-bold leading-5 whitespace-nowrap justify-center bg-red-600 w-full mt-7 pl-11 pr-16 py-3 rounded-[30px] items-start max-md:px-5"
             aria-label="Empezar"
-            aria-role="button"
+            role="button"
+            onClick={() => router.push("/cursos")}
           >
             Empezar
           </button>
         </div>
       </MaxWidthWrapper>
-    </form>
+    </div>
   );
 };
 
