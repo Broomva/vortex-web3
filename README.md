@@ -3,8 +3,8 @@
 🧪 Somos una plataforma basada en tecnología blockchain (dApp) que busca gamificar procesos educativos tradicionales trayendo elementos de web3 como NFTs, Tokens y trazabilidad para que el estudiante tenga una experiencia más lúdica en su aprendizaje.
 
 ## Información
-Puedes encontrar una demo de BrainBlaze en nuestra [web](https://brain-blaze.vercel.app/)
-Conoce todos los detalles de nuestro proyecto en nuestro [Notion](https://diamond-icicle-333.notion.site/BrainBlaze-36d9de086ff94a56b17bf86d4e0ace43?pvs=4) 
+- Puedes encontrar una demo de BrainBlaze en nuestra [web](https://brain-blaze.vercel.app/)
+- Conoce todos los detalles de nuestro proyecto en nuestro [Notion](https://diamond-icicle-333.notion.site/BrainBlaze-36d9de086ff94a56b17bf86d4e0ace43?pvs=4) 
 
 ## Requerimientos
 
@@ -58,6 +58,9 @@ Somos un equipo de apasionados por la tecnología, la innovación y la educació
 </p>
 
 ## Tecnologías y Proyectos usados
+
+### NextJS - Vercel
+El app fue desarrollado sobre NextJS y desplegado con Vercel
 
 ### Celo
 Desplegamos nuestra solución en la red de Celo.
