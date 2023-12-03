@@ -718,7 +718,7 @@ const deployedContracts = {
   },
   44787: {
     CourseNFT: {
-      address: "0x1abe21829E64F2Bfd4fe91BA3211a7011776bc75",
+      address: "0xBEE137D48E739Fa407Ec9CaE4bd38d43acc91c8d",
       abi: [
         {
           inputs: [],
@@ -840,19 +840,6 @@ const deployedContracts = {
         {
           inputs: [
             {
-              internalType: "address",
-              name: "student",
-              type: "address",
-            },
-          ],
-          name: "completeVideo",
-          outputs: [],
-          stateMutability: "nonpayable",
-          type: "function",
-        },
-        {
-          inputs: [
-            {
               internalType: "uint256",
               name: "tokenId",
               type: "uint256",
@@ -891,6 +878,19 @@ const deployedContracts = {
             },
           ],
           stateMutability: "view",
+          type: "function",
+        },
+        {
+          inputs: [
+            {
+              internalType: "address",
+              name: "student",
+              type: "address",
+            },
+          ],
+          name: "mintNFT",
+          outputs: [],
+          stateMutability: "nonpayable",
           type: "function",
         },
         {

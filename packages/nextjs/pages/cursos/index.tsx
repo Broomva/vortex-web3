@@ -20,10 +20,21 @@ const UpdatedComponent: React.FC = () => {
     },
   });
 
-  const handleFileUpload = (event: any) => {
+  const { writeAsync: SecondSync } = useScaffoldContractWrite({
+    contractName: "CourseNFT",
+    functionName: "mintNFT",
+    args: [address], // Add the args property with the address as an array
+    blockConfirmations: 1,
+    onBlockConfirmation: txnReceipt => {
+      console.log("Transaction blockHash", txnReceipt.blockHash);
+    },
+  });
+
+  const handleFileUpload = async (event: any) => {
     const file = event.target.files[0];
     console.log("Archivo cargado:", file);
-    writeAsync();
+    await writeAsync();
+    await SecondSync();
 
     setTimeout(() => {
       toast({
