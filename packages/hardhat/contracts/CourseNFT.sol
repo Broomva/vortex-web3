@@ -2,19 +2,17 @@
 pragma solidity ^0.8.0;
 
 import "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol";
-import "@openzeppelin/contracts/access/Ownable.sol";
 
-contract CourseCompletionNFT is ERC721URIStorage, Ownable {
+contract CourseNFT is ERC721URIStorage {
     mapping(address => uint256) public videosCompleted;
     uint256 private _nextTokenId;
 
-    constructor(address initialOwner) 
-        ERC721("CourseCompletionCertificate", "CCC") 
-        Ownable(initialOwner) {
+    constructor() 
+        ERC721("CourseNFT", "BZL")  {
         _nextTokenId = 1;
     }
 
-    function completeVideo(address student) public onlyOwner {
+    function completeVideo(address student) public {
         videosCompleted[student]++;
 
         // Acuña un NFT cuando se complete el curso de 6 videos
