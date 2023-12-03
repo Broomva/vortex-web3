@@ -57,10 +57,13 @@ Somos un equipo de apasionados por la tecnología, la innovación y la educació
   <img src="https://res.cloudinary.com/dp852gaey/image/upload/v1701640251/wbvnhzi69wdsfcaobtaj.png" alt="Descripción alternativa">
 </p>
 
-## Tecnologías
+## Tecnologías y Proyectos usados
 
-Celo
+### Celo
+Desplegamos nuestra solución en la red de Celo.
 
-Refi
+### Refi
+Nos proyectamos también a enfoques especiales de programas dedicados que generarian tokens especiales. Por ejemplo, Tokens Verdes que se dan como aporte extra por cursos relacionados con Finanzas Regenerativas
 
-Next
+### Scaffold-ETH 2
+Para desarrollar nuestro proyecto nos basamos en Scaffold.
