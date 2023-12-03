@@ -26,10 +26,7 @@ export const menuLinks: HeaderMenuLink[] = [
     label: "Perfil",
     href: "/perfil",
   },
-  {
-    label: "Cursos",
-    href: "/cursos",
-  },
+
   {
     label: "Recompensas",
     href: "/recompensas",
@@ -95,6 +92,30 @@ export const Header = () => {
             <span className="text-xs">Ethereum dev stack</span>
           </div>
         </Link>
+        <div className="lg:hidden dropdown" ref={burgerMenuRef}>
+          <label
+            tabIndex={0}
+            className={`ml-1 btn btn-ghost ${isDrawerOpen ? "hover:bg-secondary" : "hover:bg-transparent"}`}
+            onClick={() => {
+              setIsDrawerOpen(prevIsOpenState => !prevIsOpenState);
+            }}
+          >
+            <Bars3Icon className="h-1/2" />
+          </label>
+          {isDrawerOpen && (
+            <div>
+              <ul
+                tabIndex={0}
+                className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
+                onClick={() => {
+                  setIsDrawerOpen(false);
+                }}
+              >
+                <HeaderMenuLinks />
+              </ul>
+            </div>
+          )}
+        </div>
         <ul className="hidden lg:flex lg:flex-nowrap menu menu-horizontal px-1 gap-2">
           <HeaderMenuLinks />
         </ul>
@@ -102,30 +123,6 @@ export const Header = () => {
       <div className="navbar-end flex-grow mr-4">
         <RainbowKitCustomConnectButton />
         {/* <FaucetButton /> */}
-      </div>
-      <div className="lg:hidden dropdown" ref={burgerMenuRef}>
-        <label
-          tabIndex={0}
-          className={`ml-1 btn btn-ghost ${isDrawerOpen ? "hover:bg-secondary" : "hover:bg-transparent"}`}
-          onClick={() => {
-            setIsDrawerOpen(prevIsOpenState => !prevIsOpenState);
-          }}
-        >
-          <Bars3Icon className="h-1/2" />
-        </label>
-        {isDrawerOpen && (
-          <div>
-            <ul
-              tabIndex={0}
-              className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
-              onClick={() => {
-                setIsDrawerOpen(false);
-              }}
-            >
-              <HeaderMenuLinks />
-            </ul>
-          </div>
-        )}
       </div>
     </div>
   );
