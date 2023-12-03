@@ -8,10 +8,27 @@ import "swiper/css";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 export const Categories = () => {
+  const sliderBreakpoints = {
+    320: {
+      // when window width is >= 320px
+      slidesPerView: 3,
+      spaceBetween: 16,
+    },
+    // when window width is >= 480px
+    500: {
+      slidesPerView: 2,
+      spaceBetween: 16,
+    },
+    // when window width is >= 640px
+    1000: {
+      slidesPerView: 7,
+      spaceBetween: 16,
+    },
+  };
   return (
     <div className="flex flex-col w-full gap-1 mt-3 px-3">
       <h3 className={styles.title}>Categorias</h3>
-      <Swiper className={styles.swiper} spaceBetween={8} slidesPerView={3}>
+      <Swiper className={styles.swiper} breakpoints={sliderBreakpoints}>
         <SwiperSlide>
           <div className={styles.category_card}>
             <Image loading="lazy" src={Categoria1} alt="Categoria 1" width={24} height={24} />
