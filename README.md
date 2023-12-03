@@ -67,3 +67,8 @@ Nos proyectamos también a enfoques especiales de programas dedicados que genera
 
 ### Scaffold-ETH 2
 Para desarrollar nuestro proyecto nos basamos en Scaffold.
+
+![1_2_ETH_CO](https://github.com/HackChain5/brain-blaze/assets/52861646/e8b418ba-053c-46a3-aaf5-58719f2688d6)
+![Brand_CELATAM](https://github.com/HackChain5/brain-blaze/assets/52861646/30f60f49-557b-48b0-ae59-3e7b4a4e5a8f)
+![Logo_Transparent-Man_(2)_-_ReFi_Medellín](https://github.com/HackChain5/brain-blaze/assets/52861646/703be5af-2b79-449c-807c-48b183dfaf6e)
+
