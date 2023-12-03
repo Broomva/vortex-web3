@@ -29,3 +29,15 @@ line-height: 100%; /* 16px */
   width: 95vw !important;
   padding: 1rem 0 !important;
 }
+
+.course_card {
+  width: 100%;
+  border-radius: 1rem;
+
+
+  border-radius: var(--Space16, 16px);
+background: var(--bg-100, #FAFAF9);
+
+/* shadow/dark/base */
+box-shadow: 0px 4px 6px 0px rgba(0, 47, 75, 0.10), 0px 1px 6px 0px rgba(0, 47, 75, 0.08);
+}

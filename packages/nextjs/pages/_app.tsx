@@ -3,7 +3,7 @@ import type { AppProps } from "next/app";
 import { RainbowKitProvider, darkTheme, lightTheme } from "@rainbow-me/rainbowkit";
 import "@rainbow-me/rainbowkit/styles.css";
 import NextNProgress from "nextjs-progressbar";
-import { Toaster } from "react-hot-toast";
+// import { Toaster } from "react-hot-toast";
 import { useDarkMode } from "usehooks-ts";
 import { WagmiConfig } from "wagmi";
 import { Footer } from "~~/components/Footer";
@@ -45,7 +45,7 @@ const ScaffoldEthApp = ({ Component, pageProps }: AppProps) => {
           <main className="relative flex flex-col flex-1">
             <Component {...pageProps} />
           </main>
-          {/* <Footer /> */}
+          <Footer />
         </div>
         {/* <Toaster /> */}
       </RainbowKitProvider>
