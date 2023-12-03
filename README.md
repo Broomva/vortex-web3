@@ -69,10 +69,12 @@ Hecho esto, ya puedes interactuar con la dapp en el navegador en esta dirección
 ¡Y listo! Ya puedes correr y probar el código de BrainBlaze si deseas contribuir a este gran proyecto.
 
 ## Equipo
-Somos un equipo de apasionados por la tecnología, la innovación y la educación efectiva que involucre al aprendiz en su aprendizaje usando la gamificación. Nuestro equipo está compuesto por: 
-![Descripción alternativa](https://res.cloudinary.com/dp852gaey/image/upload/v1701640207/ocj9z0t5zmno52yzmzhl.png)
-![Descripción alternativa](https://res.cloudinary.com/dp852gaey/image/upload/v1701640251/wbvnhzi69wdsfcaobtaj.png)
-
+Somos un equipo de apasionados por la tecnología, la innovación y la educación efectiva que involucre al aprendiz en su aprendizaje usando la gamificación. Nuestro equipo está compuesto por: <p align="center">
+  <img src="https://res.cloudinary.com/dp852gaey/image/upload/v1701640207/ocj9z0t5zmno52yzmzhl.png" alt="Descripción alternativa">
+</p>
+<p align="center">
+  <img src="https://res.cloudinary.com/dp852gaey/image/upload/v1701640251/wbvnhzi69wdsfcaobtaj.png" alt="Descripción alternativa">
+</p>
 ## Tecnologías
 
 Celo
