@@ -1,4 +1,4 @@
-# 🏗 Scaffold-ETH 2
+# 🏗 BrainBlaze 2
 
 🧪 An open-source, up-to-date toolkit for building decentralized applications (dapps) on the Ethereum blockchain. It's designed to make it easier for developers to create and deploy smart contracts and build user interfaces that interact with those contracts.
 
@@ -19,7 +19,7 @@
   - [Disabling commit checks](#disabling-commit-checks)
   - [Deploying to Vercel without any checks](#deploying-to-vercel-without-any-checks)
   - [Disabling Github Workflow](#disabling-github-workflow)
-- [Contributing to Scaffold-ETH 2](#contributing-to-scaffold-eth-2)
+- [Contributing to BrainBlaze 2](#contributing-to-scaffold-eth-2)
 
 ## Requirements
 
@@ -31,7 +31,7 @@ Before you begin, you need to install the following tools:
 
 ## Quickstart
 
-To get started with Scaffold-ETH 2, follow the steps below:
+To get started with BrainBlaze 2, follow the steps below:
 
 1. Clone this repo & install dependencies
 
@@ -126,9 +126,9 @@ If you want to redeploy to the same production URL you can run `yarn vercel --pr
 
 ## Interacting with your Smart Contracts: SE-2 Custom Hooks
 
-Scaffold-ETH 2 provides a collection of custom React hooks designed to simplify interactions with your deployed smart contracts. These hooks are wrappers around `wagmi`, automatically loading the necessary contract ABI and address. They offer an easy-to-use interface for reading from, writing to, and monitoring events emitted by your smart contracts.
+BrainBlaze 2 provides a collection of custom React hooks designed to simplify interactions with your deployed smart contracts. These hooks are wrappers around `wagmi`, automatically loading the necessary contract ABI and address. They offer an easy-to-use interface for reading from, writing to, and monitoring events emitted by your smart contracts.
 
-To help developers get started with smart contract interaction using Scaffold-ETH 2, we've provided the following custom hooks:
+To help developers get started with smart contract interaction using BrainBlaze 2, we've provided the following custom hooks:
 
 - [useScaffoldContractRead](#usescaffoldcontractread): for reading public variables and getting data from read-only functions of your contract.
 - [useScaffoldContractWrite](#usescaffoldcontractwrite): for sending transactions to your contract to write data or perform an action.
@@ -300,8 +300,8 @@ We have github workflow setup checkout `.github/workflows/lint.yaml` which runs 
 
 To disable it, **delete `.github` directory**
 
-## Contributing to Scaffold-ETH 2
+## Contributing to BrainBlaze 2
 
-We welcome contributions to Scaffold-ETH 2!
+We welcome contributions to BrainBlaze 2!
 
-Please see [CONTRIBUTING.MD](https://github.com/scaffold-eth/scaffold-eth-2/blob/main/CONTRIBUTING.md) for more information and guidelines for contributing to Scaffold-ETH 2.
+Please see [CONTRIBUTING.MD](https://github.com/scaffold-eth/scaffold-eth-2/blob/main/CONTRIBUTING.md) for more information and guidelines for contributing to BrainBlaze 2.

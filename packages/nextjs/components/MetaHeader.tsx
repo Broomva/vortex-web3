@@ -1,5 +1,5 @@
-import React from "react";
 import Head from "next/head";
+import React from "react";
 
 type MetaHeaderProps = {
   title?: string;
@@ -14,8 +14,8 @@ type MetaHeaderProps = {
 const baseUrl = process.env.NEXT_PUBLIC_VERCEL_URL ? `https://${process.env.NEXT_PUBLIC_VERCEL_URL}/` : "/";
 
 export const MetaHeader = ({
-  title = "Scaffold-ETH 2 App",
-  description = "Built with 🏗 Scaffold-ETH 2",
+  title = "BrainBlaze 2 App",
+  description = "Built with 🏗 BrainBlaze 2",
   image = "thumbnail.jpg",
   twitterCard = "summary_large_image",
   children,

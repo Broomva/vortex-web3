@@ -1,5 +1,5 @@
-import { useEffect } from "react";
 import type { NextPage } from "next";
+import { useEffect } from "react";
 import { useLocalStorage } from "usehooks-ts";
 import { MetaHeader } from "~~/components/MetaHeader";
 import { ContractUI } from "~~/components/scaffold-eth";
@@ -24,8 +24,8 @@ const Debug: NextPage = () => {
   return (
     <>
       <MetaHeader
-        title="Debug Contracts | Scaffold-ETH 2"
-        description="Debug your deployed 🏗 Scaffold-ETH 2 contracts in an easy way"
+        title="Debug Contracts | BrainBlaze 2"
+        description="Debug your deployed 🏗 BrainBlaze 2 contracts in an easy way"
       />
       <div className="flex flex-col gap-y-6 lg:gap-y-8 py-8 lg:py-12 justify-center items-center">
         {contractNames.length === 0 ? (
