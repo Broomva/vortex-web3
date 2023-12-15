@@ -1,9 +1,0 @@
-.title {
-  color: var(--text-100, #292524);
-
-/* Body/medium/bold */
-font-size: 16px;
-font-style: normal;
-font-weight: 700;
-line-height: 100%; /* 16px */
-}
