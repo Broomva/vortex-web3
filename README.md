@@ -1,10 +1,9 @@
-# 🧠 Vortex
+# 🌪️ Vortex
 
-🧪 Somos una plataforma basada en tecnología blockchain (dApp) que busca gamificar procesos educativos tradicionales trayendo elementos de web3 como NFTs, Tokens y trazabilidad para que el estudiante tenga una experiencia más lúdica en su aprendizaje.
+Data & AI Marketplace
 
 ## Información
 - Puedes encontrar una demo de Vortex en nuestra [web](https://vortex-web3.vercel.app/)
-- Conoce todos los detalles de nuestro proyecto en nuestro [Notion](https://diamond-icicle-333.notion.site/Vortex-36d9de086ff94a56b17bf86d4e0ace43?pvs=4) 
 
 ## Requerimientos
 
