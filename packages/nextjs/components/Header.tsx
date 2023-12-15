@@ -1,11 +1,11 @@
-import React, { useCallback, useRef, useState } from "react";
+import { Bars3Icon, BugAntIcon } from "@heroicons/react/24/outline";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import Logo from "../logo_brain_blaze.png";
-import { Bars3Icon, BugAntIcon } from "@heroicons/react/24/outline";
+import React, { useCallback, useRef, useState } from "react";
 import { RainbowKitCustomConnectButton } from "~~/components/scaffold-eth";
 import { useOutsideClick } from "~~/hooks/scaffold-eth";
+import Logo from "../logo_brain_blaze.png";
 
 interface HeaderMenuLink {
   label: string;
@@ -88,7 +88,7 @@ export const Header = () => {
             <Image alt="SE2 logo" className="cursor-pointer" width={24} height={38} src={Logo} />
           </div>
           <div className="flex flex-col">
-            <span className="font-bold leading-tight">BrainBlaze</span>
+            <span className="font-bold leading-tight">Vortex</span>
             <span className="text-xs">Ethereum dev stack</span>
           </div>
         </Link>

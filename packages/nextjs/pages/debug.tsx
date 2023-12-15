@@ -24,8 +24,8 @@ const Debug: NextPage = () => {
   return (
     <>
       <MetaHeader
-        title="Debug Contracts | BrainBlaze 2"
-        description="Debug your deployed 🏗 BrainBlaze 2 contracts in an easy way"
+        title="Debug Contracts | Vortex"
+        description="Debug your deployed 🏗 Vortex contracts in an easy way"
       />
       <div className="flex flex-col gap-y-6 lg:gap-y-8 py-8 lg:py-12 justify-center items-center">
         {contractNames.length === 0 ? (

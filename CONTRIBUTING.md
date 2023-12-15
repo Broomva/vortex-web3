@@ -1,18 +1,18 @@
-# Welcome to BrainBlaze 2 Contributing Guide
+# Welcome to Vortex Contributing Guide
 
-Thank you for investing your time in contributing to BrainBlaze 2!
+Thank you for investing your time in contributing to Vortex!
 
 This guide aims to provide an overview of the contribution workflow to help us make the contribution process effective for everyone involved.
 
 ## About the Project
 
-BrainBlaze 2 is a minimal and forkable repo providing builders with a starter kit to build decentralized applications on Ethereum.
+Vortex is a minimal and forkable repo providing builders with a starter kit to build decentralized applications on Ethereum.
 
 Read the [README](README.md) to get an overview of the project.
 
 ### Vision
 
-The goal of BrainBlaze 2 is to provide the primary building blocks for a decentralized application.
+The goal of Vortex is to provide the primary building blocks for a decentralized application.
 
 The repo can be forked to include integrations and more features, but we want to keep the master branch simple and minimal.
 

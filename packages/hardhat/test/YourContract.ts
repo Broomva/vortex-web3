@@ -19,7 +19,7 @@ describe("YourContract", function () {
     });
 
     it("Should allow setting a new message", async function () {
-      const newGreeting = "Learn BrainBlaze 2! :)";
+      const newGreeting = "Learn Vortex! :)";
 
       await yourContract.setGreeting(newGreeting);
       expect(await yourContract.greeting()).to.equal(newGreeting);

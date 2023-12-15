@@ -1,4 +1,3 @@
-import React from "react";
 import Image from "next/image";
 import Logo from "../logo_brain_blaze.png";
 
@@ -74,7 +73,7 @@ export const Footer = () => {
           Política Protocolo
         </a>
         <p className="text-stone-500 text-center text-sm leading-5 self-stretch mt-4">
-          HackChain5
+          Broomva
           <br />
           Hackathon Web 3 Colombia, 2023
         </p>

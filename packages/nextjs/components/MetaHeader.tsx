@@ -14,8 +14,8 @@ type MetaHeaderProps = {
 const baseUrl = process.env.NEXT_PUBLIC_VERCEL_URL ? `https://${process.env.NEXT_PUBLIC_VERCEL_URL}/` : "/";
 
 export const MetaHeader = ({
-  title = "BrainBlaze 2 App",
-  description = "Built with 🏗 BrainBlaze 2",
+  title = "Vortex App",
+  description = "Built with 🏗 Vortex",
   image = "thumbnail.jpg",
   twitterCard = "summary_large_image",
   children,
