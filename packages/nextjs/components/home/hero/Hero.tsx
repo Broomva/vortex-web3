@@ -1,31 +1,27 @@
-import React from "react";
+// Hero.tsx
 import { useRouter } from "next/router";
-import MaxWidthWrapper from "../../MaxWidthWrapper";
-import styles from "./Hero.module.css";
 
 export const Hero = () => {
   const router = useRouter();
+
   return (
-    <div className={styles.hero}>
-      <div className={styles.blur} />
-      <MaxWidthWrapper>
-        <div className=" relative z-10 flex flex-col items-start justify-center w-full max-w-[500px] lg:items-center ">
-          <header className="text-stone-50 text-2xl font-bold leading-8 w-full">
-            ¡Aprende con diversión mientras recibes recompensas!
-          </header>
-          <section className="text-stone-50 text-base font-semibold leading-6 w-full mt-8">
-            Descubre un aprendizaje entretenido con recompensas en nuestra app blockchain.
-          </section>
+    <div className="relative bg-cover bg-no-repeat bg-center h-screen" style={{ backgroundImage: "url('/path-to-your-background-image.jpg')" }}>
+      <div className="flex items-center justify-center h-full bg-black bg-opacity-50">
+        <div className="text-center text-white px-4 sm:px-6 lg:px-8">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-none">
+            Streamline Your Data Operations with Vortex
+          </h1>
+          <p className="mt-6 text-xl sm:text-2xl md:text-3xl font-light">
+            Connect. Build. Grow. Enter the new era of decentralized data management.
+          </p>
           <button
-            className="text-stone-50 text-sm font-bold leading-5 whitespace-nowrap justify-center bg-red-600 w-full mt-7 pl-11 pr-16 py-3 rounded-[30px] items-start max-md:px-5"
-            aria-label="Empezar"
-            role="button"
-            onClick={() => router.push("/cursos")}
+            className="mt-8 inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-full transition duration-300 ease-in-out"
+            onClick={() => router.push("/explore")}
           >
-            Empezar
+            Explore the Marketplace
           </button>
         </div>
-      </MaxWidthWrapper>
+      </div>
     </div>
   );
 };

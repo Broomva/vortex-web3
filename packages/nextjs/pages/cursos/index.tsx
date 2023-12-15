@@ -1,10 +1,10 @@
-import * as React from "react";
-import Image from "next/image";
-import { MaxWidthWrapper } from "../../components/MaxWidthWrapper";
-import Certificado from "../../public/certificado.png";
 import { useToast } from "@chakra-ui/react";
+import Image from "next/image";
+import * as React from "react";
 import { useAccount } from "wagmi";
 import { useScaffoldContractWrite } from "~~/hooks/scaffold-eth";
+import { MaxWidthWrapper } from "../../components/MaxWidthWrapper";
+import Certificado from "../../public/certificado.png";
 
 const UpdatedComponent: React.FC = () => {
   const toast = useToast();
@@ -38,8 +38,8 @@ const UpdatedComponent: React.FC = () => {
 
     setTimeout(() => {
       toast({
-        title: "Has ganado 1 BLZ.",
-        description: "Gracias por aprender con nosotros.",
+        title: "1 VTX has been added to your wallet",
+        description: "Minting complete!",
         status: "success",
         duration: 9000,
         isClosable: true,

@@ -3,7 +3,6 @@ import { useAccount } from "wagmi";
 import { useScaffoldContractRead, useScaffoldContractWrite } from "~~/hooks/scaffold-eth";
 
 const Sample: NextPage = () => {
-
   const { address } = useAccount();
   const { writeAsync } = useScaffoldContractWrite({
     contractName: "ProgressToken",
@@ -25,10 +24,15 @@ const Sample: NextPage = () => {
     <>
       <p></p>
       <button className="btn btn-primary" onClick={() => writeAsync()}>
-        Mintear tokens
+        Mint Tokens
       </button>
       <p>
-        {address} Balance of BLZ: {Number(balance)}
+        Address:
+        {address} 
+        </p>
+      <p>
+        VTX Balance: 
+        {Number(balance)}
       </p>
     </>
   );
