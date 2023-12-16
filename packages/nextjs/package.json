@@ -1,15 +1,15 @@
 {
-  "name": "@se-2/nextjs",
+  "name": "@vortex/nextjs",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "build": "next build",
     "check-types": "tsc --noEmit --incremental",
-    "dev": "next dev",
+    "dev": "next dev -p 3001",
     "format": "prettier --write . '!(node_modules|.next|contracts)/**/*'",
     "lint": "next lint",
     "serve": "next start",
-    "start": "next dev",
+    "start": "next dev -p 3001",
     "vercel": "vercel",
     "vercel:yolo": "vercel --build-env NEXT_PUBLIC_IGNORE_BUILD_ERROR=true"
   },
